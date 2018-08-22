@@ -26,6 +26,7 @@ Quando("salvar todos os dados necessários para cadastro") do
    fill_in "description", :with=>"Dojo 1 Cadastro"
   end
 
+sleep(3)
 Entao("validar que um novo contato foi cadastrado") do
   find("#SAVE", match: :first).click
 end

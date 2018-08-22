@@ -24,9 +24,8 @@ Quando("alterar os campos do contato") do
   #find('a', text: 'Teste98800054 Teste3333').click
   #find("[href='?action=ajaxui#ajaxUILoc=index.php%3Fmodule%3DContacts%26offset%3D1%26stamp%3D1534782541023556200%26return_module%3DContacts%26action%3DDetailView%26record%3D9c24db7c-bcc7-5fce-7123-5b7aec6abaf4']").click
   #find('li.actionmenulink').click
-
  end
-
+sleep(3)
 Entao("validar que todas as informações foram salvas com sucesso") do
   find("#SAVE", match: :first).click
 end
